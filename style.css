@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #282C35;
+}
+
+.calculator {
+  margin-top: 10%;
+  padding: 1rem;
+  border-radius: 2rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin-left: 35%;
+  border: 1px solid;
+  border-color: #ffffff #ffffff #ffffff;
+  transform: perspective(55em) rotateX(50deg) rotateY(0deg) rotateZ(-40deg);
+  transform-style: preserve-3d;
+  border-radius: 32px;
+  box-shadow: -4px 4px 0 1px #f9f9fb, 1px 0 28px 0 rgba(34, 33, 81, 0.01), -28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition: 0.2s ease-in-out transform, 0.2s ease-in-out box-shadow;
+}
+.calculator:hover {
+  transform: perspective(75em) rotateX(0);
+  box-shadow: 0 0 0 0 #f9f9fb, 1px 0 28px 0 rgba(34, 33, 81, 0.01), -1px 1px 12px 0 rgba(34, 33, 81, 0.25);
+}
+
+.top_content {
+  display: flex;
+  justify-content: right;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background-color: rgb(23, 23, 23);
+  color: white;
+  min-height: 3rem;
+  padding-right: 0.5rem;
+}
+
+.for_default_height {
+  display: inline-block;
+  font-size: 3rem;
+  opacity: 0;
+}
+
+.input_container {
+  display: flex;
+  justify-content: right;
+  font-size: 1.5rem;
+  color: rgb(184, 184, 184);
+  align-items: center;
+}
+.input_container .operator {
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.equals_sign {
+  padding-left: 0.5rem;
+  padding-right: 0.75rem;
+  color: white;
+  display: none;
+  text-align: center;
+}
+
+.result_container {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 0.5rem;
+}
+
+.controls {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+.controls button {
+  min-width: 4rem;
+  aspect-ratio: 1/0.75;
+  border-radius: 10px;
+  border: 1px solid rgb(199, 199, 239);
+  font-size: 1rem;
+}
+.controls button:hover {
+  background: white;
+  font-weight: bold;
+}
+.controls button:focus {
+  outline: #4646d6;
+  border-color: #4646d6;
+  color: #4646d6;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
